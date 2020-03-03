@@ -8,6 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: texlive-base texlive-xetex
+    - name: install libraries
+      shell: bash
+      run: sudo apt install texlive-base texlive-xetex
     - name: Generates Resume
       run: xelatex resume.tex
+    - name: Upload result for job 1
+      uses: actions/upload-artifact@v1
+      with:
+        name: resume
+        path: resume.pdf
+
