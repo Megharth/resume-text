@@ -1,0 +1,155 @@
+\documentclass[]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[left=0.5in, right=0.5in, top=0.7in]{geometry}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\vspace*{6pt} \fontsize{12}{12}\selectfont \textbf{#1}}
+     \lineunder
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\begin{center}
+	{\LARGE \scshape {Megharth Lakhataria}}\\
+	Boston, MA $\cdot$ lakhataria.m@husky.neu.edu $\cdot$ (857) 869-4576 $\cdot$ www.github.com/megharth\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\hspace{1mm}
+\textbf{Northeastern University, Khoury College of Computer Sciences}
+\hfill
+Boston, MA\\
+\hspace{1mm}
+Masters Computer Science \textbf{GPA: 4.0/4.0} \hfill Sep 2019 - \\
+\hspace{1mm}
+Relevant Coursework: Web Development, Computer Systems \\
+\vspace{2mm}
+\hspace{1mm}
+\textbf{Gujarat Technological University}\hfill Gujarat, India\\
+\hspace{1mm}
+Bachelors of Technology Information Technology \textbf{GPA: 10.0/10.0} \hfill
+Aug 2015 - May 2019\\
+\hspace{1mm}
+Relevant Coursework: Operating Systems, Data Structures \\
+\vspace{2mm}
+
+%===== Skills ======%
+
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	\textbf{Programming Languages} & Javascript, C, C++, Java, Python, HTML5, CSS3            \\
+	\textbf{Databases}             & SQL, MySQL, MongoDB                                      \\
+    
+    \textbf{Libraries}             & Vue.js, Vuex, Elixir, Node.js, ExpressJs, React.JS,
+    Redux, jQuery, Bootstrap, Laravel  \\
+                          & Socket.io, GSAP, Handlebars \\
+    
+    \textbf{Other}                & GIT, Nginx, IntellIJ IDEA, Visual Studio Code,
+    Raspberry Pi, Inkscape, Figma, Heroku \\          
+\end{tabular}
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\hspace{1mm}
+\textbf{Alian Software, Anand, India}\\
+\hspace{1mm}
+\textit{Intern} \hfill Jan 2019 - May 2019\\
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{0.2mm}
+	\item Engineered dashboard to create metrics pertaining to orders using Amazon Marketplace API
+	\item Created content management system and inventory management system to assist team with daily activities
+	\item Developed customer management system to help customer care team respond to customer grievances and queries with
+    minimal wait time
+    \item Refined UI/UX of previous developed dashboard to ensure design consistency and better user experience for internal team
+    \item Collaborated with senior developers to design and debug an interface for researchers to upload GeoTIFF images in maps to
+    understand various patterns of geographical data changes resulting in data driven decision by research team
+\end{itemize}
+\hspace{1mm}
+\textbf{Maxgen Technolgies Pvt. Ltd, Vadodara, India}\\
+\hspace{1mm}
+\textit{Web Developer Intern} \hfill May 2017 - July 2017\\
+\vspace{-2mm}
+\begin{itemize}
+    \setlength\itemsep{0.2mm}
+	\item Made e-commerce website using PHP, jQuery, bootstrap and MySQL
+	\item Deployed WordPress to create portfolio website for various clients to increase digital footprints
+\end{itemize}
+
+
+%====== Projects ======%
+
+\header{Academic Projects}
+{\hspace{2mm}\textbf{Social}} {\sl React.JS, Elixir} \\
+
+{\addtolength{\leftskip}{2mm}
+A social media website that suggests potential friends based on location and
+interests while supporting messaging and notifications. Implemented with an
+intent to keep the target audience engaged. Achieved this by designing
+Javascript and CSS3 intensive website and integrating with Facebook and
+Instagram's API to keep user's basic profile in sync with these social media
+platforms while attaining \textasciitilde{}80\% accuracy in finding nearby
+friends. \\}
+\vspace*{2mm}
+{\hspace{2mm}\textbf{Checkers}} {\sl React.JS, Elixir} \\
+{\addtolength{\leftskip}{2mm}
+A multiplayer Checkers web-game with chat-room and game-room support. The goal
+was to achieve \textasciitilde{}0\% lag and make game backups while supporting
+multiple games on the server. Accomplished this by implementing Sockets that
+guarantee real-time updates under stable network connection and Genservers that
+stores the state of the game after every move. \\
+}
+\vspace*{2mm}
+{\hspace{2mm}\textbf{Eye Controlled Wheelchair}} {\sl Python} \\
+{\addtolength{\leftskip}{2mm}
+A Raspberry Pi based prototype of eye controlled wheelchair which enables
+locomotion of wheelchair using the user's eye. Aimed to achieve accurate
+interpretations of user's actions and respond with minimum latency. Used
+algorithms to detect the gestures of the eye, with the help of OpenCV library.
+And reduced the latency between motors and Pi using L-293D H-bridge. Gained
+\textasciitilde{}95\% accuracy and \textasciitilde{}20\% latency.\\
+}
+\vspace*{2mm}
+
+%======= Leadership Experience ===========%
+\header{Leadership Experience}
+\hspace{1mm}
+\textbf{Developer Head} \hfill BVM Enginerring College\\
+\hspace{1mm}
+Promoted for developing multiple web apps for central committee. \hfill Jul 2018
+- May 2019\\
+\vspace*{2mm}
+
+\ 
+\end{document}
