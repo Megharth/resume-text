@@ -1,4 +1,6 @@
 \documentclass[]{article}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
     \usepackage{fullpage}
     \usepackage{amsmath}
     \usepackage{amssymb}
@@ -6,8 +8,6 @@
     \usepackage{fontspec}
     \setmainfont{Calibri}
     \usepackage[left=0.5in, right=0.5in, top=0.7in, bottom=0.7in]{geometry}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
@@ -38,7 +38,7 @@
 
 %==== Profile ====%
 \begin{center}
-	{\LARGE \scshape {Megharth Lakhataria}}\\
+	{\LARGE {Megharth Lakhataria}}\\
 	Boston, MA $\cdot$ lakhataria.m@husky.neu.edu $\cdot$ (857) 869-4576 $\cdot$ www.github.com/megharth\\
 \end{center}
 
@@ -51,15 +51,13 @@ Boston, MA\\
 \hspace{1mm}
 Masters Computer Science \textbf{GPA: 4.0/4.0} \hfill Sep 2019 - Present\\
 \hspace{1mm}
-Relevant Coursework: Web Development, Computer Systems \\
+\textit{Relevant Coursework: Web Development, Computer Systems} \\
 \vspace{2mm}
 \hspace{1mm}
 \textbf{Gujarat Technological University}\hfill Gujarat, India\\
 \hspace{1mm}
 Bachelors of Technology Information Technology \textbf{GPA: 9.17/10.0} \hfill
 Aug 2015 - May 2019\\
-\hspace{1mm}
-Relevant Coursework: Operating Systems, Data Structures \\
 \vspace{2mm}
 
 %===== Skills ======%
@@ -90,9 +88,9 @@ Relevant Coursework: Operating Systems, Data Structures \\
 \vspace{-2mm}
 \begin{itemize}
     \setlength\itemsep{0.2mm}
-	\item Increased sales efficiency by \textasciitilde{}10\% by engineering content management system and inventory management system integrated with Amazon Marketplace API.
-	\item Reduced customer response time by \textasciitilde{}7\% by developing customer management system.
-	\item Optimized loading time of a large GeoTIFF Image on Google Maps by \textasciitilde{}35\% by extracting the meta-data from the image and converting the GeoTIFF image into a normal PNG Image of reduced resolution.
+    \item Developed content management system and inventory management system alongside the integration of Amazon Marketplace API increasing on-time order fulfilment rate by $\sim$15\%
+	\item Created a customer management system providing required information to a customer representative at centralized place improving customer response time by 9\%
+	\item Extracted metadata from the image and converted GeoTIFF image into web-optimized PNG images reducing rendering time of image on Google Maps by 35\%
 \end{itemize}
 \hspace{1mm}
 \textbf{Maxgen Technolgies Pvt. Ltd, Vadodara, India}\\
@@ -101,44 +99,65 @@ Relevant Coursework: Operating Systems, Data Structures \\
 \vspace{-2mm}
 \begin{itemize}
     \setlength\itemsep{0.2mm}
-	\item Boosted E-commerce website's performance by \textasciitilde{}30\% by reducing the database calls and caching the data on server.
-	\item Observed \textasciitilde{}5\% increase in digital footprint of Portfolio website by Improving the UI/UX and adding animations.
+	\item Implemented caching on the server side improving website page load time by 30\% 
+	\item Improved average bounce rate by 5\% and average time on page by improving UI/UX of portfolio website for 5 clients
 \end{itemize}
 
 
 %====== Projects ======%
 
 \header{Academic Projects}
-{\hspace{2mm}\textbf{Social}} {\sl React.JS, Elixir} \\
-
-{\addtolength{\leftskip}{2mm}
-A social media website that suggests potential friends based on location and
-interests while supporting messaging and notifications. Implemented with an
-intent to keep the target audience engaged. Achieved this by designing
-Javascript and CSS3 intensive website and integrating with Facebook and
-Instagram's API to keep user's basic profile in sync with these social media
-platforms while attaining \textasciitilde{}80\% accuracy in finding nearby
-friends. \\}
-\vspace*{2mm}
-{\hspace{2mm}\textbf{Checkers}} {\sl React.JS, Elixir} \\
-{\addtolength{\leftskip}{2mm}
-A multiplayer Checkers web-game with chat-room and game-room support. The goal
-was to achieve \textasciitilde{}0\% lag and make game backups while supporting
-multiple games on the server. Accomplished this by implementing Sockets that
-guarantee real-time updates under stable network connection and Genservers that
-stores the state of the game after every move. \\
-}
-\vspace*{2mm}
+{\hspace{2mm}\textbf{Social}} {\sl React.JS, Elixir, CSS3} \\
+\vspace{-2mm}
+\begin{itemize}
+        \setlength\itemsep{0.2mm}
+        \item A social media website that suggests potential friends based on location and
+        interests while supporting messaging and notifications
+        \item Used Facebook and Instagram API to keep user's basic profile in sync with these platforms
+        \item Attained 80\% accuracy in finding nearby friends by calculating the distance between users' location
+\end{itemize}
+% {\addtolength{\leftskip}{2mm}
+% . Implemented with an
+% intent to keep the target audience engaged. Achieved this by designing
+% Javascript and CSS3 intensive website and integrating with Facebook and
+% Instagram's API to keep user's basic profile in sync with these social media
+% platforms while attaining \textasciitilde{}80\% accuracy in finding nearby
+% friends. \\}
+% \vspace*{2mm}
+{\hspace{2mm}\textbf{Checkers}} {\sl React.JS, Elixir, CSS3} \\
+\begin{itemize}
+        \setlength\itemsep{0.2mm}
+        \item A multiplayer Checkers web-game with chat-room and game-room support
+        \item Supported multiple games and game backups using genservers in backend
+        \item Achieved $\sim$0\% lag in gameplay by implementing sockets
+\end{itemize}
+% {\addtolength{\leftskip}{2mm}
+% A multiplayer Checkers web-game with chat-room and game-room support. The goal
+% was to achieve \textasciitilde{}0\% lag and make game backups while supporting
+% multiple games on the server. Accomplished this by implementing Sockets that
+% guarantee real-time updates under stable network connection and Genservers that
+% stores the state of the game after every move. \\
+% }
+% \vspace*{2mm}
 {\hspace{2mm}\textbf{Eye Controlled Wheelchair}} {\sl Python} \\
-{\addtolength{\leftskip}{2mm}
-A Raspberry Pi based prototype of eye controlled wheelchair which enables
-locomotion of wheelchair using the user's eye. Aimed to achieve accurate
-interpretations of user's actions and respond with minimum latency. Used
-algorithms to detect the gestures of the eye, with the help of OpenCV library.
-And reduced the latency between motors and Pi using L-293D H-bridge. Gained
-\textasciitilde{}95\% accuracy and \textasciitilde{}20\% latency.\\
-}
-\vspace*{2mm}
+\begin{itemize}
+        \setlength\itemsep{0.2mm}
+        \item A Raspberry Pi based prototype of eye controlled wheelchair which enables
+        locomotion of wheelchair using the user's eye
+        \item Gained $\sim$95\% accuracy in recoginzing eye movements and actions by implementing
+        algorithms from OpenCV library
+        \item Latency as low as 20\% was achieved by using L-293 H-bridge to send the instructions to
+        the motors driving wheelchair
+\end{itemize}
+% {\addtolength{\leftskip}{2mm}
+% A Raspberry Pi based prototype of eye controlled wheelchair which enables
+% locomotion of wheelchair using the user's eye. Aimed to achieve accurate
+% interpretations of user's actions and respond with minimum latency. Used
+% algorithms to detect the gestures of the eye, with the help of OpenCV library.
+% And reduced the latency between motors and Pi using L-293D H-bridge. Gained
+% \textasciitilde{}95\% accuracy and \textasciitilde{}20\% latency.\\
+% }
+% \vspace*{2mm}
 
 %======= Leadership Experience ===========%
 \header{Leadership Experience}
@@ -149,7 +168,7 @@ And reduced the latency between motors and Pi using L-293D H-bridge. Gained
 \vspace{-2mm}
 \begin{itemize}
 	\setlength\itemsep{0.2mm}
-		\item Improved team efficiency by \textasciitilde{}60\% by using SCRUM method to divide tasks among team members and setting timeline for each task.
+		\item Delegated tasks as well as evaluated individual deliverables by using scrum methodology to achieve maximum efficiency for every app developed throughout the year
 \end{itemize}
 \vspace*{2mm}
 
