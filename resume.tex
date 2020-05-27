@@ -1,12 +1,12 @@
 \documentclass[]{article}
     \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
+    % \usepackage[T1]{fontenc}
     \usepackage{fullpage}
     \usepackage{amsmath}
     \usepackage{amssymb}
     \usepackage{textcomp}
-    \usepackage{fontspec}
-    \setmainfont{Calibri}
+    \usepackage{xltxtra}
+    \setmainfont{Arial}
     \usepackage[left=0.5in, right=0.5in, top=0.7in, bottom=0.7in]{geometry}
     \textheight=10in
     \pagestyle{empty}
@@ -51,14 +51,14 @@ Boston, MA\\
 \hspace{1mm}
 Masters Computer Science \textbf{GPA: 4.0/4.0} \hfill Sep 2019 - Present\\
 \hspace{1mm}
-\textit{Relevant Coursework: Web Development, Computer Systems} \\
-\vspace{2mm}
+\textit{Relevant Coursework: Web Development, Computer Systems} \hfill Expected Graduation: Spring'21\\
+\vspace{1mm}
 \hspace{1mm}
 \textbf{Gujarat Technological University}\hfill Gujarat, India\\
 \hspace{1mm}
 Bachelors of Technology Information Technology \textbf{GPA: 9.17/10.0} \hfill
 Aug 2015 - May 2019\\
-\vspace{2mm}
+\vspace{1mm}
 
 %===== Skills ======%
 
@@ -66,16 +66,16 @@ Aug 2015 - May 2019\\
 \vspace{1mm}
 \begin{tabular}{ l l }
 	\textbf{Programming Languages} & Javascript, C, C++, Java, Python, HTML5, CSS3            \\
-	\textbf{Databases}             & SQL, MySQL, MongoDB                                      \\
+	\textbf{Databases}             & SQL, Postgres, MySQL, MongoDB                            \\
     
-    \textbf{Libraries}             & Vue.js, Vuex, Elixir, Node.js, ExpressJs, React.JS,
+    \textbf{Libraries \& Frameworks}             & Vue.js, Vuex, Elixir, Node.js, ExpressJs, React.JS,
     Redux, jQuery, Bootstrap, Laravel  \\
                           & Socket.io, GSAP, Handlebars \\
     
-    \textbf{Other}                & GIT, Nginx, IntellIJ IDEA, Visual Studio Code,
-    Raspberry Pi, Inkscape, Figma, Heroku \\          
+    \textbf{Other}                & GIT, Agile(scrum), Nginx, IntellIJ IDEA, Visual Studio Code,
+    Raspberry Pi, Inkscape, Heroku \\          
 \end{tabular}
-\vspace{2mm}
+% \vspace{1mm}
 
 %==== Experience ====%
 \header{Experience}
@@ -85,20 +85,20 @@ Aug 2015 - May 2019\\
 \textbf{Northeastern University, Boston}\\
 \hspace{1mm}
 \textit{Graduate Teaching Assistant, CS 5600 - Web Developmenet} \hfill May 2020 - Aug 2020\\
-\vspace{-2mm}
+\vspace{-3mm}
 \begin{itemize}
-    \setlength\itemsep{0.2mm}
+    \setlength\itemsep{-1mm}
     \item Conducted office hours to help students with their doubts and mentor them on topics related to web development
     \item Assisted professor with grading assignments and classroom logistics  
 \end{itemize}
-
+\vspace{-2mm}
 \hspace{1mm}
 \textbf{Alian Software, Anand, India}\\
 \hspace{1mm}
 \textit{Intern} \hfill Jan 2019 - May 2019\\
-\vspace{-2mm}
+\vspace{-3mm}
 \begin{itemize}
-    \setlength\itemsep{0.2mm}
+    \setlength\itemsep{-1mm}
     \item Developed content management system and inventory management system alongside the integration of Amazon Marketplace API increasing on-time order fulfilment rate by $\sim$15\%
 	\item Created a customer management system providing required information to a customer representative at centralized place improving customer response time by 9\%
 	\item Extracted metadata from the image and converted GeoTIFF image into web-optimized PNG images reducing rendering time of image on Google Maps by 35\%
@@ -117,16 +117,25 @@ Aug 2015 - May 2019\\
 
 
 %====== Projects ======%
-
-\header{Academic Projects}
-{\hspace{2mm}\textbf{Social}} {\sl React.JS, Elixir, CSS3} \\
-\vspace{-2mm}
+\vspace{-3mm}
+\header{Projects}
+\vspace{1mm}
+{\hspace{2mm}\textbf{Bucket Allocator}} {\sl C, linux \& XV6 systems} \\
+\vspace{-3mm}
 \begin{itemize}
-        \setlength\itemsep{0.2mm}
-        \item A social media website that suggests potential friends based on location and
-        interests while supporting messaging and notifications
-        \item Used Facebook and Instagram API to keep user's basic profile in sync with these platforms
-        \item Attained 80\% accuracy in finding nearby friends by calculating the distance between users' location
+        \setlength\itemsep{-1mm}
+        \item Engineered a custom bucket allocator that can out-perform both XV6 and linux's default allocator
+        \item Created 64k thread safe buckets structure to allocate, re-allocate and free the memory
+\end{itemize}
+
+\vspace{-2mm}
+{\hspace{2mm}\textbf{Social}} {\sl React.JS, Elixir, CSS3, Postgres SQL} \\
+\vspace{-3mm}
+\begin{itemize}
+        \setlength\itemsep{-1mm}
+        \item Built a social media website that suggests potential friends based on location and
+        similar interests
+        \item Used geolocation API, Mapbox, Facebook \& Instagram API to establish the key elements
 \end{itemize}
 % {\addtolength{\leftskip}{2mm}
 % . Implemented with an
@@ -135,13 +144,13 @@ Aug 2015 - May 2019\\
 % Instagram's API to keep user's basic profile in sync with these social media
 % platforms while attaining \textasciitilde{}80\% accuracy in finding nearby
 % friends. \\}
-% \vspace*{2mm}
-{\hspace{2mm}\textbf{Checkers}} {\sl React.JS, Elixir, CSS3} \\
+\vspace{-2mm}
+{\hspace{2mm}\textbf{Checkers}} {\sl React.JS, Elixir, CSS3, Postgres SQL} \\
+\vspace{-3mm}
 \begin{itemize}
-        \setlength\itemsep{0.2mm}
-        \item A multiplayer Checkers web-game with chat-room and game-room support
-        \item Supported multiple games and game backups using genservers in backend
-        \item Achieved $\sim$0\% lag in gameplay by implementing sockets
+        \setlength\itemsep{-1mm}
+        \item Implemented a multiplayer Checkers web-game with chat-room and game-room support
+        \item Features multiple games, game backups and minimal lag using Elixir genservers \& sockets
 \end{itemize}
 % {\addtolength{\leftskip}{2mm}
 % A multiplayer Checkers web-game with chat-room and game-room support. The goal
@@ -150,11 +159,22 @@ Aug 2015 - May 2019\\
 % guarantee real-time updates under stable network connection and Genservers that
 % stores the state of the game after every move. \\
 % }
-% \vspace*{2mm}
-{\hspace{2mm}\textbf{Eye Controlled Wheelchair}} {\sl Python} \\
+
+\vspace{-2mm}
+{\hspace{2mm}\textbf{Image Processing App}} {\sl Swing, Java, Junit} \\
+\vspace{-3mm}
 \begin{itemize}
-        \setlength\itemsep{0.2mm}
-        \item A Raspberry Pi based prototype of eye controlled wheelchair which enables
+        \setlength\itemsep{-1mm}
+        \item Designed a MVC app that can generate images and process pre-existing or generated images  
+        \item Utilized k-means clustering of pixel and modification of its RGB channel to create different filters and color transforms 
+\end{itemize}
+
+\vspace{-2mm}
+{\hspace{2mm}\textbf{Eye Controlled Wheelchair}} {\sl Python} \\
+\vspace{-3mm}
+\begin{itemize}
+        \setlength\itemsep{-1mm}
+        \item Constructed a Raspberry Pi based prototype of eye controlled wheelchair which enables
         locomotion of wheelchair using the user's eye
         \item Gained $\sim$95\% accuracy in recoginzing eye movements and actions by implementing
         algorithms from OpenCV library
@@ -172,17 +192,18 @@ Aug 2015 - May 2019\\
 % \vspace*{2mm}
 
 %======= Leadership Experience ===========%
+\vspace{-3mm}
 \header{Leadership Experience}
 \hspace{1mm}
 \textbf{Developer Head}\\ 
 \hspace{1mm}
-\textit{BVM Enginerring College} \hfill Jul 2018 - May 2019\\
-\vspace{-2mm}
+\textit{BVM Engineering College} \hfill Jul 2018 - May 2019\\
+\vspace{-3mm}
 \begin{itemize}
-	\setlength\itemsep{0.2mm}
+	\setlength\itemsep{-1mm}
 		\item Delegated tasks as well as evaluated individual deliverables by using scrum methodology to achieve maximum efficiency for every app developed throughout the year
 \end{itemize}
-\vspace*{2mm}
+% \vspace*{2mm}
 
 \ 
 \end{document}
